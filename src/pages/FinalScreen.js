@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { handleAmountChange, handleScoreChange } from "../redux/actions";
+import { handleScoreChange } from "../redux/actions";
 
 const FinalScreen = () => {
   const { score } = useSelector((state) => state);
@@ -12,7 +12,6 @@ const FinalScreen = () => {
 
   const handleRestart = () => {
     dispatch(handleScoreChange(0));
-    // dispatch(handleAmountChange(10));
     history.push("/");
   };
 
