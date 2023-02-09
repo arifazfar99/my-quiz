@@ -13,7 +13,7 @@ function App() {
           <Switch>
             <Route path="/" exact>
               <Typography variant="h2" fontWeight="bold">
-                Quiz App
+                Welcome to Quiz Challenge
               </Typography>
               <WelcomeScreen />
             </Route>
